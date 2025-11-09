@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE Tips Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AE Tips Quest</h1>
+        <p>Введи своё имя для генерации сертификата</p>
+        
+        <div class="input-group">
+            <input type="text" id="userName" placeholder="userName" maxlength="30">
+            <button onclick="generateCertificate()">generateCertificate()</button>
+        </div>
+        
+        <div id="certificateContainer" class="hidden">
+            <canvas id="certificateCanvas"></canvas>
+            <div class="download-buttons">
+                <button onclick="downloadPNG()">📥 downloadPNG()</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
