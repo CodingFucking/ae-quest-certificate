@@ -7,20 +7,20 @@ const config = {
             "title": "AE TIPS QUEST",
             "subtitle": "Сертификат успеха",
             "userName": "[USER_NAME]",
-            "achievement": "Квест успешно пройден",
+            "achievement": "Успешно пройденый квест",
             "date": "[CURRENT_DATE]",
             "rank": "Expression Guru",
             "signature": "Подпись: AE Tips"
         },
         
         "styles": {
-            "title": { "font": "bold 35px 'Courier New', monospace", "y": 100 },
-            "subtitle": { "font": "bold 35px 'Courier New', monospace", "y": 137 },
-            "userName": { "font": "bold 35px 'Courier New', monospace", "y": 174 },
-            "achievement": { "font": "bold 35px 'Courier New', monospace", "y": 211 },
-            "date": { "font": "bold 35px 'Courier New', monospace", "y": 248 },
-            "rank": { "font": "bold 35px 'Courier New', monospace", "y": 285 },
-            "signature": { "font": "bold 35px 'Courier New', monospace", "y": 322 }
+            "title": { "font": "bold 35px 'Ubuntu Mono', monospace", "y": 100 },
+            "subtitle": { "font": "bold 35px 'Ubuntu Mono', monospace", "y": 137 },
+            "userName": { "font": "bold 35px 'Ubuntu Mono', monospace", "y": 174 },
+            "achievement": { "font": "bold 35px 'Ubuntu Mono', monospace", "y": 211 },
+            "date": { "font": "bold 35px 'Ubuntu Mono', monospace", "y": 248 },
+            "rank": { "font": "bold 35px 'Ubuntu Mono', monospace", "y": 285 },
+            "signature": { "font": "bold 35px 'Ubuntu Mono', monospace", "y": 322 }
         }
     }
 };
@@ -123,7 +123,7 @@ function drawJSONCertificate(ctx, userName, canvasWidth, certConfig) {
     
     // Открывающая фигурная скобка - БЕЛАЯ
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 35px "Courier New", monospace';
+    ctx.font = 'bold 35px "Ubuntu Mono", monospace';
     ctx.fillText('{', 50, 80);
     
     // Рисуем все строки
@@ -135,7 +135,7 @@ function drawJSONCertificate(ctx, userName, canvasWidth, certConfig) {
     
     // Закрывающая фигурная скобка - БЕЛАЯ
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 35px "Courier New", monospace';
+    ctx.font = 'bold 35px "Ubuntu Mono", monospace';
     ctx.fillText('}', 50, styles.signature.y + 40);
 }
 

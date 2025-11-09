@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Ubuntu Mono', monospace;
     background: #1a1a1a;
     color: #00ff00;
     min-height: 100vh;
@@ -20,49 +22,53 @@ body {
     border-radius: 8px;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
-    text-align: left; /* Выключка по левому краю */
+    text-align: left;
 }
 
 h1 {
     color: #00ff00;
     margin-bottom: 20px;
     font-size: 24px;
-    text-align: left; /* Выключка по левому краю */
+    text-align: left;
+    font-weight: 700;
 }
 
 p {
-    text-align: left; /* Выключка по левому краю */
+    text-align: left;
     margin-bottom: 15px;
     line-height: 1.5;
+    font-weight: 400;
 }
 
 .input-group {
     margin: 30px 0;
-    text-align: left; /* Выключка по левому краю */
+    text-align: left;
 }
 
 input {
     padding: 10px 15px;
     font-size: 16px;
-    font-family: 'Courier New', monospace;
+    font-family: 'Ubuntu Mono', monospace;
     background: #1a1a1a;
     color: #00ff00;
     border: 1px solid #00ff00;
     border-radius: 4px;
     width: 250px;
     margin-right: 10px;
+    font-weight: 400;
 }
 
 button {
     padding: 10px 20px;
     font-size: 14px;
-    font-family: 'Courier New', monospace;
+    font-family: 'Ubuntu Mono', monospace;
     background: #00ff00;
     color: #1a1a1a;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s;
+    font-weight: 700;
 }
 
 button:hover {
@@ -76,7 +82,7 @@ button:hover {
 
 #certificateContainer {
     margin: 30px 0;
-    text-align: left; /* Выключка по левому краю */
+    text-align: left;
 }
 
 #certificateCanvas {
@@ -89,13 +95,13 @@ button:hover {
 
 .download-buttons {
     margin-top: 20px;
-    text-align: left; /* Выключка по левому краю */
+    text-align: left;
 }
 
 .download-buttons button {
     background: #ff9900;
     color: #1a1a1a;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .download-buttons button:hover {
@@ -108,11 +114,12 @@ button:hover {
     background: #1a1a1a;
     border-radius: 4px;
     border-left: 3px solid #ff9900;
-    text-align: left; /* Выключка по левому краю */
+    text-align: left;
 }
 
 .info p {
     color: #00ff00;
     line-height: 1.5;
-    text-align: left; /* Выключка по левому краю */
+    text-align: left;
+    font-weight: 400;
 }
